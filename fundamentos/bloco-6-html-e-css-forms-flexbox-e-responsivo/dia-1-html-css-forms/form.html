@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Concorra à viagem dos seus sonhos com a TrybeTrip</h1>
+    <form action="" method="get" class="formulario">
+        <fieldset>
+            <label for="input-text">Nome:</label>
+            <input type="text" name="texto" id="input-text" placeholder="Digite seu nome completo" maxlength="40" minlength="10" required>
+            <br>
+        </fieldset>
+        <label for="input-email">Endereço de e-mail:</label>
+        <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" maxlength="50" minlength="10" required>
+        <br>
+        <label for="destino-1">Cidade</label>
+        <input type="radio" id="destino-1" name="destino" value="cidade" className="radios">
+        <label for="destino-2">Campo</label>
+        <input type="radio" id="destino-2" name="destino" value="campo" className="radios">
+        <label for="destino-3">Praia</label>
+        <input type="radio" id="destino-3" name="destino" value="praia"className="radios">
+        <label for="destino-4">Montanha</label>
+        <input type="radio" id="destino-4" name="destino" value="montanha" className="radios">
+        </label>
+        <br>
+        <label for="justificativa">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <br>
+        <textarea name="justificativa" id="textarea-1" cols="60" rows="10" placeholder="Digite sua resposta vencedora aqui"></textarea>
+        <br>
+        <label for="data-1">Qual a melhor data para realizar sua viagem?</label>
+        <input type="date" id="data-1" name="data">
+        <br>
+        <label for="concordo-1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <input type="checkbox" id="concordo-1" name="concordo">
+        <br>
+        <label for="concordo-2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <input type="checkbox" id="concordo-2" name="concordo">
+        <br>
+        <button type="submit" id="submit-btn">Participar do concurso TrybeTrip</button>
+        <button type="button" id="clear-btn">Apagar informações</button>
+        </form>
+    <script src="./script.js"></script>
+
+</body>
+</html>
